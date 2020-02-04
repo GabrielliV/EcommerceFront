@@ -1,0 +1,790 @@
+html {
+    font:16px arial, sans-serif;
+}
+body {
+    margin:0;
+    width:0;
+    background-color: #f8f8f8;
+}
+.container {
+    width:100%;
+    margin:0 auto;
+    max-width:95em;
+    min-width: 94.974em;  
+    overflow: hidden;
+}
+.cima {
+    width:100%;
+    height:4.5em;
+    background-color:#000;
+}
+.inicio {
+    float:left;
+    color:#fff;
+    margin-top: -1.9em;
+    margin-left: 7em;
+    cursor:pointer;
+}
+.inicio:hover {
+    color:#b00;
+}
+.nome {
+    font-family: 'Kalam', cursive;
+    font-size: 1.8em;
+    color: #b00;
+    float: left;
+    margin: -.9em 0 -1em 3em;
+}
+.pesquisa {    
+    padding: .6em;
+    width: 30em;
+    border-radius: .25em;
+    font-family:Hind, Arial, sans-serif;
+    background-color:#ddd;
+    transition: .8s;
+    border: .1em solid transparent;
+    margin: 1.2em 0 -1em 40em;
+}
+.pesquisa:focus {
+    background-color:#fefefe;
+    outline:none;
+    border: .1em solid #b00;
+}
+.lupa {
+    color: #000;
+    float: right;
+    margin-top: -1.2em;
+    position: relative;
+    margin-right: 38.4em;
+    cursor: pointer;
+}
+.lupa:hover {
+    color:#d00;
+}
+.textlogin {
+    font-family: Hind, Arial, sans-serif;
+    color: #ddd;
+    float: left;
+    font-size: 1.25em;
+    margin: -1em 0 0 48.5em;
+}
+.login {
+    position: relative;
+    float: right;
+    top: -1.4em;
+    right: 18em;
+    color: #ddd;
+    margin-bottom: .3em;
+    cursor: pointer;
+}
+.login:hover {
+    color:#d00;
+    cursor:pointer;
+}
+.dadosCli {
+    color: white;position: relative;
+    float: right;
+    right: 16.5em;
+    bottom: 1.8em;
+}
+.dadosCli:hover {
+    color:#d00;
+    cursor:pointer;
+    display:inline-block;
+}
+.menuCli {
+    display: none;
+}
+.separar {
+    border-left: .05em solid #ddd;
+    padding: 0 0 0 5.2em;
+    cursor:default;
+}
+.carrinho {
+    position: relative;
+    float:right;
+    top: -1.5em;
+    right:5em;
+    color: #ddd;
+
+}
+.sair {
+    position: relative;
+    float: right;
+    top: -1.5em;
+    right: -8em;
+    color: #ddd;
+    display:none;
+}
+.sair:hover {
+    color:#d00;
+    cursor:pointer;
+}
+.carrinho a:hover { 
+    color:#d00;
+    cursor:pointer;
+}
+.carrinho a {
+    text-decoration:none;
+    color:#ddd;
+}
+header {
+    margin-bottom:-0.2em;
+    clear:both;
+}
+.imgh1 {
+    opacity:.7;
+    margin-top: -.7em;
+    max-width:95em;
+    min-width:95em;
+}
+.esp {
+    height: .3em;
+    background-color: #fff;
+    position: relative;
+    margin-top: 3em;
+    width: 100%;
+}
+nav {
+    margin-top:-3em;
+    position:absolute;
+    color:#fff;
+    height:3em;
+    width:100%;
+    background-color:#000;
+    text-align:center;
+    position:relative;
+}
+nav li {
+    display: inline-block;
+    padding: .8em 3em;
+    margin: 0 3.693em;
+}
+li a {
+    display:block;
+    font-size: 1.2em;
+}
+li:hover {
+    background-color:#5e5d5dc4;
+    transition:background-color .5s linear .2s;
+    cursor:pointer;
+}
+ul {
+    margin:-3.2em 0 0 -4em;
+}
+main {
+    margin-top:3em;
+    width:100%
+}
+/* ConteÃƒÂºdo da pÃƒÂ¡gina */
+.titulo1 {
+    text-align:center;
+    font-family: "Times New Roman", Times, serif;
+    color:#d00;
+}
+.todoconteudo {
+    /* margin-top: em; */
+    text-align: center;
+    width:75%;
+    margin:auto;
+}
+.conteudo {
+    width: 16em;
+    height: 20em;
+    border: 2px solid #000;
+    position: relative;
+    display: inline-block;
+    margin: 2em 2.8em 2em 2.8em;
+    background-color: #fff;
+    border-radius: .6em;
+    font-family: 'Kalam', cursive;
+    box-shadow: 0.6em 0.6em 0.7em grey;
+
+}
+.imagemc {
+    text-align:center;
+}
+.imgcentro {
+    width: 55em;
+    margin-bottom:2em;
+}
+.tituloC {
+    margin:2.3em 0 1.2em 0;
+    font-size: 2.4em;
+    font-family: "Times New Roman", Times, serif;
+}
+.textC {
+    padding:0em 17em 0 17em;
+    text-align:justify;
+    font-size:1.2em;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Produtos */
+section {
+    text-align: center;
+}
+.imgProd {
+    margin: 0.8em 0 0.3em 0;
+    width:9em;
+    height:9em;    
+}
+.tituloProd {
+    margin: 0;
+}
+.precoProd {
+    margin: 0;
+}
+.un {
+    margin: 0;
+}
+.mandaCarr {
+    width:6.5em;
+    height:2em;
+    cursor: pointer;
+    margin: 0;
+    border-radius: .2em;
+    font-family: 'Kalam', cursive;
+}
+/* Categorias */
+.todoconteudo.visivel {
+    display:block;
+}
+
+/* RodapÃƒÂ© */
+footer {
+    margin-top:5em;
+    height:11.5em;
+    width:100%;
+    background-color:black;
+    position: absolute;
+}
+.redesoc {
+    float:right;
+    margin:2.8em 4em 0 0;
+}
+.rds {
+    color:#fff;
+    padding-left:1.3em;
+}
+.rds:hover {
+    cursor:pointer;
+}
+.infofoot {	
+    text-align: center;
+    color: #fff;
+    padding: 2em 0 0 36em;
+    position: absolute;
+}
+/* Controle de visibilidade */
+
+.conteudotela {
+    display:none;
+}
+.conteudotela.visivel {
+    display:block;
+}
+
+/* Carrinho */
+.tituloCa {
+    font-size: 1.5em;
+    margin: 3em 0 0 8em;
+}
+.infoCima {
+    height: 2.5em;
+    width: 50em;
+    text-align: center;
+    margin: 4em 0 -1.2em 7em;
+}
+.info {
+    width:50em;
+    display:inline-block;
+    border-bottom: 1px solid #e9e9e9;
+}
+.infoProd {
+    width:17em;
+    display:inline-block;
+    float:left;
+}
+.infoPreco {
+    display:inline-block;
+    width: 10em;
+}
+.infoQuant {
+    display:inline-block;
+    width: 10em;
+}
+.infoTotal {
+    display:inline-block;
+    width: 10em;
+}
+/* Produtos do carrinho */
+.conteudoCar {
+    margin-left: 7em;
+    border-bottom: 1px solid #e9e9e9;
+    width: 50em;
+}
+.tamCar {
+    height:15em;
+}
+.carImgProd {
+    width: 140px;
+    height: 140px;
+    display: inline-block;
+    position: relative;
+    top: 1em;
+}
+.carTituloProd {
+    display: inline-block;
+    text-align: center;
+    width: 6em;
+    position: relative;
+    bottom: 2em;
+}
+.carPrecoProd {
+    display: inline-block;
+    width: 7em;
+    margin-left: 3em;
+    position: relative;
+    bottom: 3em;
+}
+.carUn {
+    display: inline-block;
+    width: 7em;
+    margin: 0 0em 0 -7em;
+    position: relative;
+    bottom: 1.8em;
+}
+.carQtdeCompra {
+    bottom: 4.5em;
+    display: inline-block;
+    text-align: center;
+    width: 5em;
+    line-height: 3em;
+    outline: none;
+    position: relative;
+    margin-left: 2.5em;
+}
+.removProd {
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    float: right;
+    margin: .05em -4em 0 0;
+    border-radius: .05em;
+}
+.carProdTotal {
+    display: inline-block;
+    width: 7em;
+    margin-left: 6em;
+    position: relative;
+    bottom: 3em;
+}
+.secCar {
+    width: 62em;
+}
+.foraCar {
+    width: 62em;
+    display:inline-block;
+    float: left;
+}
+/* Calculos do carrinho e finalizar */
+.carTudo {
+    float: right;
+    font-size: 1.5em;
+    position: fixed;
+    display: inline-block;
+    margin-left:44em;
+    text-align: center;
+    background-color: #f2f2f2;
+    border: .2em solid #Ddd;
+    width: 15em;
+    height: 11.5em;
+    border-radius: .3em;
+    padding: .2em;    
+    bottom: 10em;
+}
+.qtdeTudo {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.freteCar {
+    margin-bottom: 2em;
+}
+.precoTudo {
+    margin-bottom: 1em;
+}
+.btnFinal {
+    border-radius: .4em;
+    padding: 0.5em;
+    cursor: pointer;
+    font-size: .8em;
+}
+.nadaC {
+    margin: 1em 0 0 3.2em;
+    font-size: 2.2em;
+}
+/* Login */
+.logar {
+    margin: 2.5em 0 0.2em 0;
+    font-size: 2.2em;
+    font-family: Ubuntu-Regular;
+    width: 100%;
+    text-align: center;
+}
+.bloco {
+    width: 36em;
+    height: 18.5em;
+    /* margin: 0 0 .4em 28em; */
+    margin: auto;
+    /* background-color: #eee; */
+    border-radius: 2em;
+    overflow: auto;
+}
+.contcentro {
+    text-align:center;
+    /* margin-right: 5em; */
+}
+.txtemail {
+    display:inline-block;
+    padding-top: 1.6em;
+    padding-bottom: .4em;
+    font-size: 1.4em;
+    margin-right: 10em;
+    margin-left: .3em;
+    font-family: Ubuntu-Regular;
+}
+.email {
+    width: 24em;
+    height: .6em;
+    font-family: Ubuntu-Regular;
+    border-radius: .2em;
+    border: 1.1px solid black;
+    padding: 1em .5em;
+}
+.email:hover {
+    border:1.1px solid #b00;
+}
+.iconuser {
+    margin-left: 1em;
+    position: relative;
+    display: inline-block;    
+}
+.iconpass {
+    margin-left: 1em;
+    position: relative;
+    display: inline-block;
+}
+.txtsenha {
+    display:inline-block;
+    padding-top: 1em;
+    padding-bottom: .4em;
+    font-size: 1.4em;
+    margin-right: 10em;
+    margin-left: .3em;
+    font-family: Ubuntu-Regular;
+}
+.senha {
+    width: 24em;
+    height: .6em;
+    font-family: Ubuntu-Regular;
+    border-radius: .2em;
+    border: 1.1px solid black;
+    padding: 1em .5em;
+}
+.senha:hover {
+    border:1.1px solid #b00;
+}
+.entrar {
+    width: 6em;
+    height: 1.8em;
+    cursor: pointer;
+    margin: 2em 0 0 6.9em;
+    border-radius: .3em;
+    border: 1px solid black;
+    background-color: #f8f8f8;
+    font-family: Ubuntu-Regular;
+    font-size: 1.1em;
+}
+
+.cadastro {
+    width: 6em;
+    height: 1.8em;
+    cursor: pointer;
+    margin: 0 0 0 26em;
+    font-family: Ubuntu-Regular;
+    font-size: 1.6em;
+    color: black;
+}
+/* Cadastro */
+.ladoE {
+    float:left;
+    margin-left: 5em;
+}
+.ladoD {
+    float:right;
+}
+.cadastrar {
+    margin: 2.5em 0 0.2em 0em;
+    font-size: 1.2em;
+    font-family: Ubuntu-Regular;
+}
+.bloco2 {
+    width: 54em;
+    height: 26.5em;
+    margin: auto;
+}
+.contcentro2 {
+    margin-right: 5em;
+}
+.txtCC {
+    display: block;
+    padding-top: 0.6em;
+    padding-bottom: .4em;
+    font-size: 1.2em;
+    margin-right: .3em;
+    font-family: Ubuntu-Regular;
+}
+.campoCC {
+    width: 20em;
+    height: .2em;
+    font-family: Ubuntu-Regular;
+    border-radius: .2em;
+    border: 1.1px solid black;
+    padding: 1em .5em;
+}
+.cadastrarC {
+    clear: both;
+    display: block;
+    width: 6em;
+    height: 1.8em;
+    cursor: pointer;
+    margin: 2.7em 0 0 5.5em;
+    border-radius: .3em;
+    border: 1px solid black;
+    background-color: #f8f8f8;
+    font-family: Ubuntu-Regular;
+    font-size: 1.3em;
+}
+.inicialC {
+    margin: 0 0 0 8em;
+    /* margin: auto; */
+    font-size: 2.2em;
+    font-family: Ubuntu-Regular;
+}
+/* Pedidos */
+.tituloPed {
+    font-size: 1.5em;
+    margin: 3em 0 0 8em;
+}
+.secPed {
+    width:70em;
+}
+.infoCimaPed {
+    height:1.5em;
+    width: 85em;
+    text-align: center;
+    margin: 4em 0 -0.2em -8em;
+}
+.infoPed {
+    width: 55em;
+    display: inline-block;
+    border-bottom: 1px solid #e9e9e9;
+}
+.infoProdPed {
+    width: 16em;
+    display: inline-block;
+    float: left;
+}
+.infoQuantPed {
+    display:inline-block;
+    width: 6em;
+    float:left;
+}
+.infoDataPed {
+    display: inline-block;
+    width: 9em;
+    float: left;
+}
+.infoDataPrevPed {
+    display:inline-block;
+    width: 14em;
+    float:left;
+}
+.infoTotalPed {
+    display: inline-block;
+    float: left;
+}
+.verPedItens {
+    display: inline-block;
+    float: right;
+    margin-top: 1.3em;
+    margin-right: 1.5em;
+
+}
+.tamPed {
+    height:15em;
+}
+.foraPed {
+    width: 62em;
+    display:inline-block;
+    float: left;
+}
+.pedTudo {
+    float: right;
+    font-size: 1.5em;
+    position: fixed;
+    display: inline-block;
+    margin-left: 6em;
+    text-align: center;
+}
+/* Pedido - Dinâmicos */
+.conteudoPed {
+    margin-left: 7em;
+    border-bottom: 1px solid #e9e9e9;
+    width: 55em;
+}
+.pedTituloProd {
+    display: inline-block;
+    text-align: center;
+    width: 12em;
+    position: relative;
+    font-size: 1.3em;
+}
+.pedImgProd {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    position: relative;
+    top: 1em;
+}
+.pedData {
+    display:inline-block;
+    font-size: 1.2em;
+    margin-left:1.5em;
+    position:relative;
+}
+.pedDataPrev {
+    display:inline-block;
+    font-size: 1.2em;
+    margin-left:4.4em;
+    position:relative;
+}
+.pedTotal {
+    display:inline-block;
+    font-size:1.2em;
+    position:relative;
+    margin-left:3em;
+}
+/* Itens Pedidos */
+.secPedItem {
+    width:70em;
+}
+.infoCimaPedItem {
+    height:1.5em;
+    width: 85em;
+    text-align: center;
+    margin: 4em 0 -0.2em -8em;
+}
+.infoPedItem {
+    width: 55em;
+    display: inline-block;
+    border-bottom: 1px solid #e9e9e9;
+}
+.infoProdPedItem {
+    width: 16em;
+    display: inline-block;
+    float: left;
+}
+.infoQtdePedItem {
+    display:inline-block;
+    width: 6em;
+    float:left;
+}
+.infoPrecoPedItem {
+    display: inline-block;
+    width: 9em;
+    float: left;
+}
+.infoTotalPedItem {
+    display:inline-block;
+    width: 14em;
+    float:left;
+}
+.tamPedItem {
+    height:15em;
+}
+.foraPedItem {
+    width: 62em;
+    display:inline-block;
+    float: left;
+}
+.pedTudoItem {
+    float: right;
+    font-size: 1.5em;
+    position: fixed;
+    display: inline-block;
+    margin-left: 6em;
+    text-align: center;
+}
+
+/* Pedido Item - Dinâmicos */
+.conteudoPedItem {
+    margin-left: 7em;
+    border-bottom: 1px solid #e9e9e9;
+    width: 55em;
+}
+.pedTituloProdItem {
+    display: inline-block;
+    text-align: center;
+    width: 12em;
+    position: relative;
+    font-size: 1.3em;
+}
+.pedImgProdItem {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    position: relative;
+    top: 1em;
+}
+.pedPrecoItem {
+    display:inline-block;
+    font-size: 1.2em;
+    margin-left:1.5em;
+    position:relative;
+}
+.pedQtdeItem {
+    display:inline-block;
+    font-size: 1.2em;
+    margin-left:4.4em;
+    position:relative;
+}
+.pedTotalItem {
+    display:inline-block;
+    font-size:1.2em;
+    position:relative;
+    margin-left:3em;
+}
+
+/* Kits */
+.imgKit {
+    margin: 0.8em 0 0.3em 0;
+    width:9em;
+    height:9em; 
+}
+.tituloKit {
+    margin: 0;
+}
+.precoKit {
+    margin: 0;
+}
+.verKit {
+    width: 8.5em;
+    height: 2em;
+    cursor: pointer;
+    margin: 1.5em 0 0 0;
+    border-radius: .2em;
+    font-family: 'Kalam', cursive;
+
+}

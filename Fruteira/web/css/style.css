@@ -1,0 +1,327 @@
+html {
+    font:16px arial, sans-serif;
+}
+body {
+    margin:0;
+    width:0;
+}
+.container {
+    width:100%;
+    margin:0 auto;
+    max-width:95em;
+    min-width:95em;
+}
+.cima {
+    width:100%;
+    height:4.5em;
+    background-color:#000;
+}
+.inicio {
+    float:left;
+    color:#fff;
+    margin-top: -1.9em;
+    margin-left: 7em;
+    cursor:pointer;
+}
+.inicio:hover {
+    color:#b00;
+}
+.nome {
+    font-family: 'Kalam', cursive;
+    font-size: 1.8em;
+    color: #b00;
+    float: left;
+    margin: -.9em 0 -1em 3em;
+}
+.pesquisa {    
+    padding: .6em;
+    width: 30em;
+    border-radius: .25em;
+    font-family:Hind, Arial, sans-serif;
+    background-color:#ddd;
+    transition: .8s;
+    border: .1em solid transparent;
+    margin: 1.2em 0 -1em 40em;
+}
+.pesquisa:focus {
+    background-color:#fefefe;
+    outline:none;
+    border: .1em solid #b00;
+}
+.lupa {
+    color: #000;
+    float: right;
+    margin-top: -1.2em;
+    position: relative;
+    margin-right: 38.4em;
+    cursor: pointer;
+}
+.lupa:hover {
+    color:#d00;
+}
+.textlogin {
+    font-family: Hind, Arial, sans-serif;
+    color: #ddd;
+    float: left;
+    font-size:1.15em;
+    margin: -1em 0 0 53em;
+}
+.login {
+    position:relative;
+    float:right;
+    top:-1.4em;
+    right:19em;
+    color:#ddd;
+    cursor:pointer;
+}
+.login:hover {
+    color:#d00;
+    cursor:pointer;
+}
+.separar {
+    border-left: .05em solid #ddd;
+    padding: 0 0 0 5.2em;
+    cursor:default;
+}
+.carrinho {
+    position: relative;
+    float:right;
+    top: -1.5em;
+    right:5em;
+    color: #fff;
+
+}
+.carrinho a:hover { 
+    color:#d00;
+    cursor:pointer;
+}
+.carrinho a {
+    text-decoration:none;
+    color:#ddd;
+}
+header {
+    margin-bottom:-0.2em;
+    clear:both;
+}
+.imgh1 {
+    opacity:.6;
+    margin-top: -.4em;
+    max-width:95em;
+    min-width:95em;
+}
+.esp {
+    height: .3em;
+    background-color: #fff;
+    position: absolute;
+    margin-top: -3.1em;
+    width: 100%;
+}
+nav {
+    margin-top:-3em;
+    position:absolute;
+    color:#fff;
+    height:3em;
+    width:100%;
+    background-color:#000;
+    text-align:center;
+    position:relative;
+}
+nav li {
+    display:inline-block;
+    padding: .9em 5em;
+    margin: 0 2.693em;
+}
+li a {
+    display:block;
+}
+li:hover {
+    background-color:#666;
+    transition:background-color .5s linear .2s;
+    cursor:pointer;
+}
+ul {
+    margin:-3.2em 0 0 -4em;
+}
+main {
+    margin-top:3em;
+    height:100em;
+    width:100%
+}
+/* Conteúdo da página */
+.titulo1 {
+    text-align:center;
+    font-family: "Times New Roman", Times, serif;
+    color:#d00;
+}
+.todoconteudo {
+/*    margin-top: em;*/
+    text-align: center;
+    width:75%;
+    margin:auto;
+}
+.conteudo {
+    width: 16em;
+    height: 20em;
+    border: 2px solid #000;
+    position: relative;
+    display: inline-block;
+    margin:1.7em;
+}
+.imagemc {
+    text-align:center;
+}
+.imgcentro {
+    width: 55em;
+    margin-bottom:2em;
+}
+.tituloC {
+    margin:2.3em 0 1.2em 0;
+    font-size: 2.4em;
+    font-family: "Times New Roman", Times, serif;
+}
+.textC {
+    padding:0em 17em 0 17em;
+    text-align:justify;
+    font-size:1.2em;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Produtos */
+.conteudo {
+    position:relative;
+}
+.imgProd {
+    margin-top:.8em;
+    width:9em;
+    height:9em;
+}
+.mandaCarr {
+    width:6em;
+    height:2em;
+    cursor: pointer;
+}
+/* Categorias */
+.todoconteudo {
+    display:none;
+}
+.todoconteudo.visivel {
+    display:block;
+}
+
+/* Rodapé */
+footer {
+    margin-top:10em;
+    height:11.5em;
+    width:100%;
+    background-color:black;
+}
+.redesoc {
+    float:right;
+    margin:2.8em 4em 0 0;
+}
+.rds {
+    color:#fff;
+    padding-left:1.3em;
+}
+.rds:hover {
+    cursor:pointer;
+}
+.infofoot {	
+    text-align: center;
+    color: #fff;
+    padding: 2em 0 0 36em;
+    position: absolute;
+}
+/*  */
+
+.conteudotela {
+    display:none;
+}
+.conteudotela.visivel {
+    display:block;
+}
+
+/* Carrinho */
+.tituloC {
+    font-size: 1.7em;
+    margin: 3em 0 0 8em;
+}
+.infoCima {
+    height: 2.5em;
+    width: 50em;
+    text-align: center;
+    margin:4em 0 0 7em;
+}
+.info {
+    width:50em;
+    display:inline-block;
+    border-bottom: 1px solid #e9e9e9;
+}
+.infoProd {
+    width:17em;
+    display:inline-block;
+    float:left;
+}
+.infoPreco {
+    display:inline-block;
+    width: 10em;
+}
+.infoQuant {
+    display:inline-block;
+    width: 10em;
+}
+.infoTotal {
+    display:inline-block;
+    width: 10em;
+}
+
+/* Login */
+.logar {
+    margin: 2.5em 0 0.2em 13em;
+    font-size: 2.2em;
+    font-family:Times New Roman;
+}
+.bloco {
+    width:36em;
+    height:17em;
+    margin: 0 0 0 28em;
+    background-color:#08000d;
+}
+.contcentro {
+    text-align:center;
+    margin-right: 5em;
+}
+.txtemail {
+    display: block;
+    padding-top: 1.6em;
+    padding-bottom: .4em;
+    font-size: 1.4em;
+    margin-right: 10em;
+    font-family:Times New Roman;
+}
+.email {
+    width: 22em;
+    border-radius: .2em;
+    height: 1.6em;
+}
+.txtsenha {
+    display:block;
+    padding-top: 1em;
+    padding-bottom: .4em;
+    font-size: 1.4em;
+    margin-right: 10em;
+    font-family:Times New Roman;
+}
+.senha {
+    width: 22em;
+    border-radius: .2em;
+    height: 1.6em;
+}
+.entrar {
+    width: 7em;
+    height: 2em;
+    cursor: pointer;
+    margin: 2em 0 0 22.6em;
+}
+
+

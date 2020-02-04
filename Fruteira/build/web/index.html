@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="AUTORDOSITE">
+        <meta name="keywords" content="PALAVRASCHAVE">
+        <meta name="description" content="DESCRICAODOSITE">
+        <!--     <link type="text/css" rel="stylesheet" href="style/normalize.css"> -->
+        <!-- FONT AWESOME: -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" href="css/styleteste.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+            <script src="script/html5shiv.js"></script>
+        <![endif]-->
+        <!-- <script src="script/prefixfree.min.js"></script> -->
+        <title>Fruteira da Gabi</title>
+        <link rel="shortcut icon" href="img/favicon.ico"/>
+    </head>
+    <body>
+        <!--    <a href="https://fontawesome.com/icons?d=gallery&m=free">Ícones do font-awesome</a> -->
+        <div class="container">
+            <div class="cima">
+
+                <span class="inicio" id="btnPrincipal" href="principal">
+                    <i class="fas fa-apple-alt" style="font-size:50px" title="Início"></i>
+                </span>
+
+                <div id="btnPesq" class="btnPesquisa">
+                    <input autocomplete="new-password" name="conteudo-pesquisa" class="pesquisa" type="search" id="pesquisaC" placeholder="O que você deseja?">
+                </div>
+
+
+                <span class="lupa">
+                    <i class="fa fa-search" style="font-size:24px" id="lupa-pesquisa"></i>
+                </span>
+
+                <div class="textlogin">Login</div>
+
+                <span class="login" id="btnLogin" href="login">
+                    <i class="fas fa-sign-in-alt" style="font-size:34px" title="Efetuar login"></i>                 
+                </span>
+
+                <span class="dadosCli" id="btnDadosCli" href="dadosCli">
+                    <i class="fas fa-shopping-bag" style="font-size:38px" title="Meus Pedidos"></i>
+                </span>
+
+                <span class="carrinho separar" id="btnCarrinho" href="carrinho">
+                    <a href="#">
+                        <i class="fa fa-shopping-cart" style="font-size:33px" title="Carrinho"></i>
+                    </a>
+                </span>
+
+                <span>
+                    <a class="sair" id="btnSair">
+                        <i class="fas fa-sign-out-alt" style="font-size:33px" title="Sair"></i>
+                    </a>
+                </span>
+
+            </div>
+
+            <!-- Principal -->
+            <div class="principal conteudotela visivel" id="principal">
+                <header>
+                    <img class="imgh1" src="img/toda.png">
+
+
+                </header>
+                <div class="esp"></div>
+                <nav class="menu">
+                    <ul class="ul1">
+                        <li href="inicio" id="btnInicio" cgrupo="154"><a>Combos</a></li> 
+                        <li href="frutas" id="btnFrutas" cgrupo="55"><a>Frutas</a></li>                       
+                        <li href="verduras" id="btnVerduras" cgrupo="62"><a>Verduras</a></li>		
+                        <li href="legumes" id="btnLegumes" cgrupo="79"><a>Legumes</a></li>			
+                    </ul>
+                </nav>	
+                <main>
+
+                    <section>
+
+                    </section>
+
+                </main>
+            </div>
+
+            <!-- Login -->
+            <div class="login2 conteudotela" id="login">
+                <div class="logar">Faça login para comprar.</div>
+                <div class="bloco">
+                    <div class="contcentro">
+                        <span class="iconL">
+                            <i class="fas fa-user" style="font-size:25px"></i>
+                        </span>
+                        <label class="txtemail">E-mail:</label>
+                        <input class="email" id="loginEmail" type="text" title="E-mail" value="">
+                        <br>
+
+                        <span class="iconL">
+                            <i class="fas fa-lock" style="font-size:25px"></i>
+                        </span>
+                        <label class="txtsenha">Senha:</label>
+                        <input class="senha" id="loginSenha" type="password" title="Senha" value="">	
+                        <br>
+
+                        <span class="iconL">
+                            <i class="fas fa-address-card" style="font-size:25px"></i>
+                        </span>
+                        <label class="txtcpf">CPF:</label>
+                        <input class="cpf" id="loginCpf" type="text" title="CPF" value="">	
+                    </div>
+                    <button class="entrar">Entrar</button>   
+                    <div href="cadastro" class="cadastroBtn">
+                        <a class="cadastro" id="btnCadastro" title="Cadastre-se em nosso site">Cadastrar-se</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Cadastro -->
+            <div class="cadastrar conteudotela" id="cadastro">
+                <div class="inicialC">Cadastre-se para continuar.</div>
+                <div class="bloco2">
+                    <div class="contcentro2">
+                        <div class="ladoE">
+                            <label class="txtCC">Nome:</label>
+                            <input class="campoCC" id="nome" type="text" title="Nome" value="">
+                            <br>
+                            <label class="txtCC">E-mail:</label>
+                            <input class="campoCC" id="email" type="text" title="E-mail" value="">
+                            <br>
+                            <label class="txtCC">Senha:</label>
+                            <input class="campoCC" id="senha" type="password" title="Senha" value="">
+                            <br>
+                            <label class="txtCC">Endereço:</label>
+                            <input class="campoCC" id="endereco" type="text" title="Endereço" value="">
+                            <br>
+                            <label class="txtCC">CEP:</label>
+                            <input class="campoCC" id="cep" type="text" title="CEP" value="">
+                            <br>
+                            <label class="txtCC">Número:</label>
+                            <input class="campoCC" id="numero" type="text" title="Número" value="">
+                            <br>
+                            <label class="txtCC">Bairro:</label>
+                            <input class="campoCC" id="bairro" type="text" title="Bairro" value="">
+                        </div>	
+                        <div class="ladoD">
+                            <label class="txtCC">Complemento:</label>
+                            <input class="campoCC" id="complemento" type="text" title="Complemento" value="">
+                            <br>
+                            <label class="txtCC">Cidade:</label>
+                            <input class="campoCC" id="cidade" type="text" title="Cidade" value="">
+                            <br>
+                            <label class="txtCC">UF:</label>
+                            <input class="campoCC" id="uf" type="text" title="UF" value="">
+                            <br>
+                            <label class="txtCC">CPF:</label>
+                            <input class="campoCC" id="cpf" type="text" title="CPF" value="">
+                            <br>
+                            <label class="txtCC">Celular:</label>
+                            <input class="campoCC" id="celular" type="text" title="Celular" value="">
+                            <br>
+                            <label class="txtCC">Data de Nascimento:</label>
+                            <input class="campoCC" id="nascimento" type="text" title="Nascimento" placeholder="Ex.: dd/mm/aaaa" data-mask="00/00/0000" maxlength="10" autocomplete="off" value="">
+                            <button class="cadastrarC">Cadastrar</button> 
+                        </div>
+                    </div>                                      
+                </div>
+            </div>
+
+            <!-- Carrinho -->
+            <div class="carrinho2 conteudotela" id="carrinho">
+                <div class="tituloCa">CARRINHO DE COMPRAS</div>
+                <section class="secCar">
+                    <div class="infoCima">
+                        <div class="info">
+                            <div class="infoProd">Produto</div>
+                            <div class="infoPreco">Preço</div>
+                            <div class="infoQuant">Qtde.</div>
+                            <div class="infoTotal">Total</div>                          
+                        </div>
+                    </div>
+
+                </section>  
+                <div class="tamCar">
+                    <div class="foraCar"></div>                         
+
+                    <div class="carTudo">
+                    </div> 
+                </div>
+            </div>
+
+            <!-- Pedidos-->
+            <div class="pedidos conteudotela" id="dadosCli">
+                <div class="tituloPed">MEUS PEDIDOS</div>
+                <section class="secPed">
+
+                </section>  
+
+            </div> 
+
+
+            <!-- Itens Pedidos -->
+            <div class="pedidoItens" id="pedItens" style="display: none">
+                <section class="secPedItem">
+                    <div class="infoCimaPedItem">
+                        <div class="infoPedItem">
+                            <div class="infoProdPedItem">Produto</div>
+                            <div class="infoQtdePedItem">Qtde.</div>
+                            <div class="infoPrecoPedItem">Preço</div>
+                            <div class="infoTotalPedItem">Total</div>                          
+                        </div>
+                    </div>
+
+                </section>  
+                <div class="tamPedItem">
+                    <div class="foraPedItem"></div>                         
+
+                    <div class="pedTudoItem">
+                    </div> 
+                </div>
+            </div>
+
+
+            <!-- Formas de pagamento  -->
+            <div class="pagamento conteudotela" id="formPag">
+                <p class="titPag">Como deseja pagar?</p>
+                <div class="tiposs">
+                    <div class="pagCartao">
+                        <p class="tCar">CARTÃO</p>
+                        <span class="iconFont">
+                            <i class="fas fa-money-check-alt"></i>
+                        </span>
+
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="cmd" value="_xclick" />
+                            <input type="hidden" name="business" value="vendfruteira@hotmail.com" />
+                            <input type="hidden" name="return" value="http://portal.tecnicon.com.br:7078/Fruteira/index.html" />
+                            <input type="hidden" name="cancel" value="http://portal.tecnicon.com.br:7078/Fruteira/index.html" />                     
+                            <input type="hidden" name="notify_url" value="http://portal.tecnicon.com.br:7078/Fruteira/index.html" />
+                            <input type="hidden" name="charset" value="utf-8" />
+                            <input type="hidden" name="lc" value="BR" />
+                            <input type="hidden" name="country_code" value="BR" />
+                            <input type="hidden" name="currency_code" value="BRL" />
+                            <input type="hidden" name="amount" value="" class="valor" />
+                            <input type="hidden" name="item_name" value="Produtos Fruteira" />
+                            <input type="hidden" name="quantity" value="1" />
+                            <input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_buynowCC_LG.gif" border="0" id="payPayl" style="margin-top: 50px;" class="btnPayPal"/>
+                        </form>
+
+
+
+                    </div>
+                    <div class="pagBoleto">
+                        <p class="tBol">BOLETO</p>
+                        <span class="iconFont mag">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </span>
+                        <button class="btnPagaB" id="btnPagaB">Selecionar</button>
+                    </div>
+                    <div class="pagDinhei">
+                        <p class="tDin">DINHEIRO</p>
+                        <span class="iconFont mag">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </span>
+                        <button class="btnPagaD" id="btnPagaD">Selecionar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <footer>
+            <div class="redesoc">
+                <a class="rds" href="https://www.instagram.com/vivatecnicon/?hl=pt-br"><i class="fab fa-instagram" style="font-size:45px"></i></a>
+                <a class="rds" href="https://www.facebook.com/tecnicon/"><i class="fab fa-facebook" style="font-size:45px"></i></a>
+                <a class="rds" href="https://twitter.com/TECNICON?s=17"><i class="fab fa-twitter" style="font-size:45px"></i></a>
+                <a class="rds" href="https://www.linkedin.com/company/tecnicon/"><i class="fab fa-linkedin" style="font-size:45px"></i></a>
+            </div>
+            <div class="infofoot">
+                <p>Fruteira da Gabi.</p>
+                <p>Avenida Imigrantes, 909, Centro, Horizontina - RS, 98920-000</p>
+                <p>CNPJ 93.070.159/0001-632</p>
+            </div>
+
+        </footer>
+
+
+        <script src="js/utils.js"></script>
+        <script src="js/principal.js"></script>
+
+    </body>
+</html>

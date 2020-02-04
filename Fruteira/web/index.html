@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="AUTORDOSITE">
+        <meta name="keywords" content="PALAVRASCHAVE">
+        <meta name="description" content="DESCRICAODOSITE">
+        <!--     <link type="text/css" rel="stylesheet" href="style/normalize.css"> -->
+        <!-- FONT AWESOME: -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" href="css/styleteste.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+            <script src="script/html5shiv.js"></script>
+        <![endif]-->
+        <!-- <script src="script/prefixfree.min.js"></script> -->
+        <title>Fruteira da Gabi</title>
+        <link rel="shortcut icon" href="img/favicon.ico"/>
+    </head>
+    <body>
+        <!--    <a href="https://fontawesome.com/icons?d=gallery&m=free">Ícones do font-awesome</a> -->
+        <div class="container">
+            <div class="cima">
+                <div class="form-pesquisa" id="btnPesq">
+                    <input autocomplete="new-password" name="conteudo-pesquisa" class="pesquisa" type="search" id="pesquisaC" placeholder="O que você deseja?">
+                </div>
+
+                <span class="inicio" id="btnPrincipal" href="principal">
+                    <i class="fas fa-apple-alt" style="font-size:50px" title="Início"></i>
+                </span>
+
+                <h1 class="nome">Fruteira da Gabi</h1>
+
+                <span class="lupa">
+                    <i class="fa fa-search" style="font-size:24px" id="lupa-pesquisa"></i>
+                </span>
+
+                <div class="textlogin">Login</div>
+
+                <span class="login" id="btnLogin" href="login">
+                    <i class="fas fa-sign-in-alt" style="font-size:34px" title="Efetuar login"></i>                 
+                </span>
+
+                <span class="dadosCli" id="btnDadosCli" href="dadosCli">
+                    <i class="fas fa-shopping-bag" style="font-size:38px" title="Meus Pedidos"></i>
+                </span>
+
+                <span class="carrinho separar" id="btnCarrinho" href="carrinho">
+                    <a href="#">
+                        <i class="fa fa-shopping-cart" style="font-size:33px" title="Carrinho"></i>
+                    </a>
+                </span>
+
+                <span>
+                    <a class="sair" id="btnSair">
+                        <i class="fas fa-sign-out-alt" style="font-size:33px" title="Sair"></i>
+                    </a>
+                </span>
+
+            </div>
+
+            <!-- Principal -->
+            <div class="principal conteudotela visivel" id="principal">
+                <header>
+                    <img class="imgh1" src="img/toda.png" width="1536px">
+
+
+                </header>
+                <div class="esp"></div>
+                <nav class="menu">
+                    <ul class="ul1">
+                        <li href="inicio" id="btnInicio" cgrupo="154"><a>Início</a></li> 
+                        <li href="frutas" id="btnFrutas" cgrupo="55"><a>Frutas</a></li>                       
+                        <li href="verduras" id="btnVerduras" cgrupo="62"><a>Verduras</a></li>		
+                        <li href="legumes" id="btnLegumes" cgrupo="79"><a>Legumes</a></li>			
+                    </ul>
+                </nav>	
+                <main>
+
+                    <section>
+
+                    </section>
+
+                    <div class="imagemc fadeInDown animated">
+                        <h1 class="tituloC">Mantenha-se saudável!</h1>
+                        <img class="imgcentro" src="img/centro.jpg">
+                        <p class="textC">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A ciência da nutrição estuda
+                            os alimentos e a maneira pela qual nosso corpo os utiliza. Os nutrientes podem ser categorizados em macronutrientes,
+                            proteínas, carboidratos e gorduras, e micronutrientes, vitaminas e minerais, os quais são essenciais para o 
+                            funcionamento adequado e, portanto, para um estado ótimo de saúde.
+                            Nutr. Adriana Garófolo</p>
+                    </div>
+
+                </main>
+            </div>
+
+            <!-- Login -->
+            <div class="login2 conteudotela" id="login">
+                <div class="logar">Faça login para comprar.</div>
+                <div class="bloco">
+                    <div class="contcentro">
+                        <span class="iconuser">
+                            <i class="fas fa-user" style="font-size:25px"></i>
+                        </span>
+                        <label class="txtemail">E-mail:</label>
+                        <input class="email" id="loginEmail" type="text" title="E-mail" value="">
+                        <br>
+                        <span class="iconpass">
+                            <i class="fas fa-lock" style="font-size:25px"></i>
+                        </span>
+                        <label class="txtsenha">Senha:</label>
+                        <input class="senha" id="loginSenha" type="password" title="Senha" value="">					
+                    </div>
+                    <button class="entrar">Entrar</button>                    
+                </div>
+                <div href="cadastro">
+                    <a class="cadastro" id="btnCadastro" title="Cadastre-se em nosso site">Cadastrar-se</a>
+                </div>
+            </div>
+
+
+            <!-- Cadastro -->
+            <div class="cadastrar conteudotela" id="cadastro">
+                <div class="inicialC">Cadastre-se para continuar.</div>
+                <div class="bloco2">
+                    <div class="contcentro2">
+                        <div class="ladoE">
+                            <label class="txtCC">Nome:</label>
+                            <input class="campoCC" id="nome" type="text" title="Nome" value="">
+                            <br>
+                            <label class="txtCC">E-mail:</label>
+                            <input class="campoCC" id="email" type="text" title="E-mail" value="">
+                            <br>
+                            <label class="txtCC">Senha:</label>
+                            <input class="campoCC" id="senha" type="password" title="Senha" value="">
+                            <br>
+                            <label class="txtCC">Endereço:</label>
+                            <input class="campoCC" id="endereco" type="text" title="Endereço" value="">
+                            <br>
+                            <label class="txtCC">CEP:</label>
+                            <input class="campoCC" id="cep" type="text" title="CEP" value="">
+                            <br>
+                            <label class="txtCC">Número:</label>
+                            <input class="campoCC" id="numero" type="text" title="Número" value="">
+                        </div>	
+                        <div class="ladoD">
+                            <label class="txtCC">Bairro:</label>
+                            <input class="campoCC" id="bairro" type="text" title="Bairro" value="">
+                            <br>
+                            <label class="txtCC">Cidade:</label>
+                            <input class="campoCC" id="cidade" type="text" title="Cidade" value="">
+                            <br>
+                            <label class="txtCC">CPF:</label>
+                            <input class="campoCC" id="cpf" type="text" title="CPF" value="">
+                            <br>
+                            <label class="txtCC">Celular:</label>
+                            <input class="campoCC" id="celular" type="text" title="Celular" value="">
+                            <button class="cadastrarC">Cadastrar</button> 
+                        </div>
+                    </div>                                      
+                </div>
+            </div>
+
+            <!-- Carrinho -->
+            <div class="carrinho2 conteudotela" id="carrinho">
+                <div class="tituloCa">CARRINHO DE COMPRAS</div>
+                <section class="secCar">
+                    <div class="infoCima">
+                        <div class="info">
+                            <div class="infoProd">Produto</div>
+                            <div class="infoPreco">Preço</div>
+                            <div class="infoQuant">Qtde.</div>
+                            <div class="infoTotal">Total</div>                          
+                        </div>
+                    </div>
+
+                </section>  
+                <div class="tamCar">
+                    <div class="foraCar"></div>                         
+
+                    <div class="carTudo">
+                    </div> 
+                </div>
+            </div>
+
+            <!-- Pedidos -->
+            <div class="pedidos conteudotela" id="dadosCli">
+                <div class="tituloPed">MEUS PEDIDOS</div>
+                <section class="secPed">
+                    <div class="infoCimaPed">
+                        <div class="infoPed">
+                            <div class="infoProdPed">Pedido</div>
+                            <div class="infoDataPed">Data do Pedido</div>
+                            <div class="infoDataPrevPed">Data de Entrega</div>
+                            <div class="infoTotalPed">Total</div>                          
+                        </div>
+                    </div>
+
+                </section>  
+                <div class="tamPed">
+                    <div class="foraPed"></div>                         
+
+                    <div class="pedTudo">
+                    </div> 
+                </div>
+            </div>
+            
+            <!-- Itens Pedidos -->
+            <div class="pedidoItens conteudotela" id="pedItens">
+                <section class="secPedItem">
+                    <div class="infoCimaPedItem">
+                        <div class="infoPedItem">
+                            <div class="infoProdPedItem">Produto</div>
+                            <div class="infoQtdePedItem">Qtde.</div>
+                            <div class="infoPrecoPedItem">Preço</div>
+                            <div class="infoTotalPedItem">Total</div>                          
+                        </div>
+                    </div>
+
+                </section>  
+                <div class="tamPedItem">
+                    <div class="foraPedItem"></div>                         
+
+                    <div class="pedTudoItem">
+                    </div> 
+                </div>
+            </div>
+
+        </div>
+
+
+        <footer>
+            <div class="redesoc">
+                <span class="rds"><i class="fab fa-instagram" style="font-size:45px"></i></span>
+                <span class="rds"><i class="fab fa-facebook" style="font-size:45px"></i></span>
+                <span class="rds"><i class="fab fa-twitter" style="font-size:45px"></i></span>
+                <span class="rds"><i class="fab fa-linkedin" style="font-size:45px"></i></span>
+            </div>
+            <div class="infofoot">
+                <p>Fruteira da Gabi.</p>
+                <p>Avenida Tucunduva - 1322, Horizontina - RS, CEP 98920000</p>
+                <p>CNPJ 22.238.74/1513-92</p>
+            </div>
+
+        </footer>
+
+
+        <script src="js/utils.js"></script>
+        <script src="js/principal.js"></script>
+
+    </body>
+</html>
